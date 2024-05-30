@@ -1,18 +1,258 @@
-<!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width,initial-scale=1" />
-      <title>🦜 Polyglot - Piratical PyScript</title>
-      <link rel="stylesheet" href="https://pyscript.net/releases/2024.5.2/core.css">
-      <script type="module" src="https://pyscript.net/releases/2024.5.2/core.js"></script>
-  </head>
-  <body>
-    <h1>Polyglot 🦜 💬 🇬🇧 ➡️ 🏴‍☠️</h1>
-    <p>Translate English into Pirate speak...</p>
-    <input type="text" id="english" placeholder="Type English here..." />
-    <button py-click="translate_english">Translate</button>
-    <div id="output"></div>
-    <script type="py" src="./main.py" config="./pyscript.json"></script>
-  </body>
+<head>
+
+<link rel="stylesheet" href="C:/Users/MoritzMWuehr/OneDrive - Deutsche Bahn/Architekturen/Website/node_modules/@db-ui/core/dist/css/enterprise/db-ui-core.css" type="text/css">
+<script src="https://yarnpkg.com/package/@db-ui/core"></script>
+<link href="C:/Users/MoritzMWuehr/OneDrive - Deutsche Bahn/Architekturen/Website/node_modules/@db-ui/core/dist/css/db-ui-core.vars.css" rel="stylesheet">
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.5.2/core.css">
+<script type="module" src="https://pyscript.net/releases/2024.5.2/core.js"></script>
+</head>
+
+
+<body>
+
+
+
+
+
+  <header class="rea-header">
+    <nav class="cmp-mainnavigation" id="mainnavigation-inheader01">
+      <input type="checkbox" id="toggle_mainnavigation-inheader01">
+      <label for="toggle_mainnavigation-inheader01" title="Toggle main navigation" class="is-site-name">DSD ArchKiosk</label>
+      <ul>
+        <li>
+          <a href="#" class="elm-link " title="" rel="index">Architekturposter
+          </a>
+        </li>
+        <li>
+          <a href="#" class="elm-link " title="" rel="offers" aria-current="page">Einzelne Komponenten
+          </a>
+        </li>
+        <li>
+          <a href="#" class="elm-link " title="" rel="news">News
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="cmp-brand">
+      <a href="#" title="Home" rel="home">
+        <img src="C:/Users/MoritzMWuehr/OneDrive - Deutsche Bahn/Architekturen/Website/node_modules/@db-ui/base/build/assets/images/db_logo.svg" alt="Deutsche Bahn Logo" width="" height="" class="elm-image is-logo" elementtiming="logo">
+      </a>
+      <span class="is-site-name">DSD Reference Architecture</span>
+    </div>
+    <div class="rea-meta">
+      
+      <ul class="cmp-metanavigation">
+        <li>
+          <a href="#" class="elm-link " title="Title text" data-icon="alert" rel="print">Drucken
+          </a>
+        </li>
+        <li>
+          <a href="#" class="elm-link " title="Title text" rel="messages">Nachrichten
+          </a>
+        </li>
+      </ul>
+      <ul class="cmp-language-switcher">
+        <li>
+          <a href="#" class="elm-link " title="English language" rel="alternate" hreflang="en">EN
+          </a>
+        </li>
+        <li aria-current="page">
+          <a href="#" class="elm-link " title="Deutsche Sprache" rel="bookmark" hreflang="de">DE
+          </a>
+        </li>
+        
+    </div>
+  </header>
+
+<!-- <main class="rea-main"> -->
+<main style="margin-left:30;margin-right:30;margin-top:15;margin-bottom:15">
+
+
+ 
+  
+    
+  <!-- [html-validate-disable-next heading-level, no-unused-disable -- we're doing some simple demonstration simplification here] -->
+  <h2 class="elm-headline " data-pulse>Komponente wählen!</h2>
+  
+ <!-- Grid Start -->
+   <div class="rea-grid">
+  <div data-type="one-fifth">
+
+
+    
+<!-- Radio: Release -->  
+<p> Release: </p>    
+<input type="radio" class="elm-radio " name="radioChecked" id="id-6b5f5322-447d-4c11-b579-8d46c853fb8b" checked>
+	<label class="elm-label" for="id-6b5f5322-447d-4c11-b579-8d46c853fb8b">Basis Release Plus</label>
+	<br>
+	<input type="radio" class="elm-radio " name="radioChecked" id="id-9d54edc2-a194-412f-8245-069276087a78">
+	<label class="elm-label" for="id-9d54edc2-a194-412f-8245-069276087a78">TZB-Release</label>
+	<br>
+	<input type="radio" class="elm-radio " name="radioDisabled" id="id-03aebb0c-775a-4416-b5e1-a1f54f45d9e3" disabled>
+	<label class="elm-label" for="id-03aebb0c-775a-4416-b5e1-a1f54f45d9e3">Nach-TZB-Release</label>
+	<br>
+	
+<!-- Radio: Architektur -->  
+<p> Architektur: </p>    
+<input type="radio" class="elm-radio " name="radioChecked" id="id-6b5f5322-447d-4c11-b579-8d46c853fb8b" checked>
+	<label class="elm-label" for="id-6b5f5322-447d-4c11-b579-8d46c853fb8b">Logische Architektur</label>
+	<br>
+	<input type="radio" class="elm-radio " name="radioChecked" id="id-9d54edc2-a194-412f-8245-069276087a78">
+	<label class="elm-label" for="id-9d54edc2-a194-412f-8245-069276087a78">Netzwerkarchitektur</label>
+	<br>
+	<input type="radio" class="elm-radio " name="radioChecked" id="id-6e8f26f3-284c-4a5a-a3cf-500d426870aa">
+	<label class="elm-label" for="id-6e8f26f3-284c-4a5a-a3cf-500d426870aa">Physische Architektur</label>
+	<br> 	 
+   
+<!-- Tags -->
+<p> Anwendersicht: </p>
+  <!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
+		<input class="elm-chip" type="radio" id="chip-single-chip01" name="selection" data-type="selection">
+
+		<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
+		<label for="chip-single-chip01" role="button" data-icon="alert" data-variant="poi-kunst-kultur" tabindex="0" aria-hidden="true">Projekt</label>
+
+		<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
+		<input class="elm-chip" type="radio" id="chip-single-warning0" name="selection" data-type="selection">
+
+		<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
+		<label for="chip-single-warning0" role="button" data-icon="alert" data-variant="poi-einkaufen" tabindex="0" aria-hidden="true">Industrie</label>
+
+		<!-- [html-validate-disable-next input-missing-label -- label get read out on the input field already and could get aria hidden] -->
+		<input class="elm-chip" type="radio" id="chip-single-error1" name="selection" data-type="selection">
+
+		<!-- [html-validate-disable-next prefer-native-element -- TODO: Evaluate again on this HTML] -->
+		<label for="chip-single-error1" role="button" data-icon="alert" data-variant="poi-gesundheit" tabindex="0" aria-hidden="true">DSD-Entwickler</label>
+
+<!-- Drop-Down: Komponenten -->	
+<p> Komponente: </p>
+<select class="elm-select " name="select03" id="select03" data-variant="solid">
+      <option></option>
+      <option value="smartphone">Smartphone</option>
+      <option value="softphone">Softphone</option>
+      <option value="headset">Headset</option>
+      <option value="fax" disabled>Fax / disabled</option>
+    </select>
+    <label class="elm-label" for="select03">auswählen...</label>
+ 	
+		
+		
+<!-- Button: Filter anwenden -->
+<p>
+  <button class="elm-button " data-variant="brand-primary" data-size="small" title="Title text" type="button" data-icon-after="refresh">
+    Architektur laden
+  </button>
+</p>		
+	
+
+	
+<!-- Grid 1/5tel Ende -->	
+</div>
+<!-- Grid Auto Start -->	
+<div>	
+	
+<!-- Binde -->
+<section aria-live="polite" data-variant="hovering">
+</section>
+<section aria-live="assertive" data-variant="hovering">
+  <div class="cmp-notification" data-type="warning" role="alert" data-icon="block">
+    Dieses Release ist nicht das aktuell gültige!
+  </div>
+</section>
+
+
+<!-- Architekturkarte 2 -->			
+<h2 class="elm-headline ">Komponente</h2>
+<section aria-live="polite" data-variant="hovering">
+  <div class="cmp-notification" role="status">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit
+  </div>
+</section>
+
+<!-- Komponentenliste -->	
+<h2 class="elm-headline ">Komponentenliste</h2>
+<!-- Card Start-->
+  <section aria-live="polite" data-variant="hovering">
+  <div class="cmp-notification" role="status">
+	
+<!-- Akkordion-->		
+<details class="cmp-accordion">
+  <summary><h3 class="elm-headline ">Komponentenname</h3></summary>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<table class="cmp-table " data-border="around">
+  <caption>
+    Table title
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">The table header 01</th>
+      <th scope="col">The table header 02</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Value 01 - 01</td>
+      <td>Value 01 - 02</td>
+    </tr>
+    <tr>
+      <td>Value 02 - 01</td>
+      <td>Value 02 - 02</td>
+    </tr>
+    <tr>
+      <td>Value 03 - 01</td>
+      <td>Value 03 - 02</td>
+    </tr>
+    <tr>
+      <td>Value 04 - 01</td>
+      <td>Value 04 - 02</td>
+    </tr>
+    <tr>
+      <td>Value 05 - 01</td>
+      <td>Value 05 - 02</td>
+    </tr>
+  </tbody>
+</table>
+</details>
+<!-- Card Ende -->
+ </div>
+</section>
+
+
+
+<!-- Grid Ende -->     
+</div>
+</div>	
+  
+</main>	  
+	  
+<!-- Footer --> 	  
+<footer class="rea-footer has-border">
+  <ul class="cmp-metanavigation">
+    <li>
+      <a href="https://db-ui.github.io/datenschutzerklaerung.html" class="elm-link " title="" rel="noopener noreferrer" lang="de" hreflang="de" target="_blank">Datenschutzerklärung (Data privacy)
+      </a>
+    </li>
+    <li>
+      <a href="https://www.dbsystel.de/dbsystel-en/legal-3715942" class="elm-link " title="" rel="noopener noreferrer" target="_blank">Imprint
+      </a>
+    </li>
+    <li>
+      <a href="mailto:db-ux-designsystem@deutschebahn.com" class="elm-link " title="">Contact
+      </a>
+    </li>
+    <li>
+      <a href="https://marketingportal.extranet.deutschebahn.com/marketingportal/Design-Anwendungen/DB-UX-Design-System/Design-fuer-Apps-Web/" class="elm-link " title="" rel="noopener noreferrer" target="_blank">About us
+      </a>
+    </li>
+  </ul>
+  DB InfraGO AG
+</footer>
+	  
+
+
+	  
+<db-button>it works!</db-button>
+</body>
+
 </html>
