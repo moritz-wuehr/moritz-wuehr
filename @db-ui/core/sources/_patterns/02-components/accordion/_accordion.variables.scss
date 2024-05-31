@@ -1,0 +1,8 @@
+@import "../../../css/helpers/functions";
+@import "../../00-base/icons/icons.variables";
+@import "../../00-base/icons/icons.helpers";
+
+$accordion---paddingLeft: $db-spacing-m !default;
+$accordion---paddingRight: to-rem(
+	$pxValue: 16
+) !default;

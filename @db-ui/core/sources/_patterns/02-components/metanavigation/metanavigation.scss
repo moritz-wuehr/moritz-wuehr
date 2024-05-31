@@ -1,0 +1,44 @@
+@import "metanavigation.variables";
+
+.cmp-metanavigation {
+	display: flex;
+	list-style: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-left: 0;
+
+	li {
+		padding-left: to-rem($pxValue: 8);
+		padding-right: to-rem($pxValue: 8);
+
+		.rea-footer & {
+			padding-left: to-rem($pxValue: 6);
+			padding-right: to-rem($pxValue: 6);
+		}
+
+		.elm-link {
+			text-decoration: none;
+
+			.cmp-sitesearch:focus-within ~ & {
+				@include is-icon-text-replace();
+			}
+			@media screen and (max-width: #{$metanavigation-iconOnly--maxWidth}) {
+				.rea-header & {
+					@include is-icon-text-replace();
+				}
+			}
+		}
+	}
+
+	.rea-footer & {
+		flex-wrap: wrap;
+		justify-content: center;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 1rem;
+		}
+		@media screen and (min-width: 768px) {
+			float: right;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+@import "../../../css/helpers/functions";
+@import "cards.variables";
+
+.cmp-card {
+	background-color: #fff;
+
+	border-radius: 8px;
+	box-shadow: $box-shadow-01, $box-shadow-02;
+
+	& > a {
+		text-decoration: none;
+	}
+
+	figure {
+		margin: $db-spacing-m $db-spacing-m $db-spacing-m $db-spacing-s;
+	}
+
+	// Banner variant
+	&[data-variant="banner"] {
+		figure {
+			display: flex;
+		}
+
+		figcaption {
+			margin-left: 1rem;
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-size: to-rem($pxValue: 18);
+
+				&,
+				& ~ p {
+					margin: 0.125rem 0;
+				}
+			}
+
+			p {
+				font-size: to-rem($pxValue: 14);
+
+				max-width: to-rem(
+					$pxValue: 290
+				); // TODO: This would need some rework
+			}
+		}
+	}
+
+	// Tile variant
+	&[data-variant="tile"] {
+		text-align: center;
+	}
+
+	figcaption {
+		max-width: 60ch;
+	}
+}
