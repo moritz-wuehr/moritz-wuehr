@@ -23,5 +23,5 @@ def get_output(event):
     now = datetime.now()
     display(now.strftime("%m/%d/%Y, %H:%M:%S"))
 
-    pydom["div#output"].html = f"{datetime.get_output()} 🥁"
+    pydom["div#output"].html = f"{pyjokes.get_output()} 🥁"
 
