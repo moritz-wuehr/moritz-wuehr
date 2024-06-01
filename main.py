@@ -14,5 +14,4 @@ print(response.text)
 
 
 def output(event):
-    output_div = "test"
-    output_div.innerText = "funktioniert"
+    print("hello")
