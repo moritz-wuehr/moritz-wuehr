@@ -8,20 +8,14 @@
 
 
 <body>
-  <script type="py">
-    from pyscript import display
-    from datetime import datetime
-    now = datetime.now()
-    display(now.strftime("%m/%d/%Y, %H:%M:%S"))
-    
-</script>
-      
-
-<button id="get_output" py-click="get_output">Get a new PyJoke</button>
-<div id="output"></div>
-
-<script type="py" src="./main.py"></script>
-
+  
+    <script type="py" src="./main.py" config="./pyscript.json">
+      from pyscript import display
+      from datetime import datetime
+      from main import function
+      function()
+      print(function)
+    </script>
 
   <header class="rea-header">
     <nav class="cmp-mainnavigation" id="mainnavigation-inheader01">
