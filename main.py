@@ -17,5 +17,5 @@
 
 
 
-def function()
+def function():
     print("fertig")
