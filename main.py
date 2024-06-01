@@ -14,10 +14,14 @@
 
 #print(response.text)
 
-def output():
+def get_output(event):
+    import pyjokes
+    from pyweb import pydom
+
     from pyscript import display
     from datetime import datetime
     now = datetime.now()
     display(now.strftime("%m/%d/%Y, %H:%M:%S"))
 
+    pydom["div#output"].html = f"{datetime.get_output()} 🥁"
 
