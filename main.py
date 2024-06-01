@@ -1,4 +1,5 @@
 import requests
+from pyscript import document
 
 url = "https://apis.deutschebahn.com/db/apis/ris-boards/v1/public/arrivals/8500010?timeStart=2024-05-29T14%3A07%3A54.140Z&timeEnd=2024-05-29T15%3A57%3A38.866Z&includeStationGroup=true&includeMessagesDisruptions=true"
 
@@ -15,3 +16,4 @@ print(response.text)
 
 def output(event):
     print("hello")
+    output_div.innerText = "hallo"
