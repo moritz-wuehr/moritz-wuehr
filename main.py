@@ -16,4 +16,5 @@ print(response.text)
 
 def output(event):
     print("hello")
+    output_div = document.querySelector("#output")
     output_div.innerText = "hallo"
