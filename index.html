@@ -9,11 +9,13 @@
 
 <body>
     
-    <script type="py" src="./main.py" config="./pyscript.json"></script>
-    <py-script>
-      import main
+    <script type="py" src="./main.py" config="./pyscript.json">
+      from main import output
       output()
       print(response.text)
+    </script>
+    <py-script>
+      
     </py-script>
   
 
