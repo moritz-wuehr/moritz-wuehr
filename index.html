@@ -2,22 +2,18 @@
 <head>
 
 <link rel="stylesheet" href="./@db-ui/core/dist/css/enterprise/db-ui-core.css" type="text/css">
-<script type="module" src="https://pyscript.net/releases/2024.5.2/core.js"></script>
+<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
 
 </head>
 
 
 <body>
-    <p><script type="py" src="./main.py" config="./pyscript.json">
-      from main import output
-      output()
-      print('test')
-    </script></p>
-    <py-script>
-        for i in range(10):
-          print(i) 
-    </py-script>
-  
+  <script type="py">
+    from pyscript import display
+    from datetime import datetime
+    now = datetime.now()
+    display(now.strftime("%m/%d/%Y, %H:%M:%S"))
+</script>
       
   
 
