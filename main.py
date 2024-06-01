@@ -14,6 +14,7 @@
 
 #print(response.text)
 
-print("hello")
+def output():
+    print('hello')
 
 
