@@ -14,7 +14,6 @@ response = requests.get(url, headers=headers)
 print(response.text)
 
 
-def output(event):
-    print("hello")
+def return(event):
     output_div = document.querySelector("#output")
     output_div.innerText = "hallo"
