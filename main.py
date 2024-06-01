@@ -12,5 +12,7 @@ response = requests.get(url, headers=headers)
 
 print(response.text)
 
-def output():
-    print("hallo")
+
+def output(event):
+    output_div = "test"
+    output_div.innerText = "funktioniert"
