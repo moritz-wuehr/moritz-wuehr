@@ -12,5 +12,5 @@ response = requests.get(url, headers=headers)
 
 print(response.text)
 
-def output()
+def output():
 print("hallo")
