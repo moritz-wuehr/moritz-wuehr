@@ -8,8 +8,12 @@
 
 
 <body>
-    <script type="py" src="./main.py" config="./pyscript.json">print(test)</script>
-    <script type="py" src="./main.py" config="./pyscript.json">output()</script>
+    <script type="py" src="./main.py" config="./pyscript.json">print("test")</script>
+    <script type="py" src="./main.py" config="./pyscript.json">
+      from main import *
+      output()
+      print(response.text)
+    </script>
     <py-script>ouput()</py-script>
   
 
