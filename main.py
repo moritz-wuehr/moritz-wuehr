@@ -11,4 +11,6 @@ headers = {
 response = requests.get(url, headers=headers)
 
 print(response.text)
-output_div = "hallo"
+
+def output()
+print(response.text)
