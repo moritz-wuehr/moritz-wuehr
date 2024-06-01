@@ -16,10 +16,6 @@
 
 
 
-from pyscript import display
-from datetime import datetime
 
 def function()
-    now = datetime.now()
-    display(now.strftime("%m/%d/%Y, %H:%M:%S"))
-    print('fertig')
+    print("fertig")
