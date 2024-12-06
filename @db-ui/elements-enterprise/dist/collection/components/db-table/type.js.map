@@ -1,1 +1,0 @@
-{"version":3,"file":"type.js","sourceRoot":"","sources":["../../../src/components/db-table/type.ts"],"names":[],"mappings":"","sourcesContent":["export type TableDataType = {\n  caption: string;\n  headers: string[];\n  rowTitles?: string[];\n  rowTitle?: string;\n  columns?: {\n    [id: string]: string[];\n  };\n  rows?: object[];\n};\n"]}
